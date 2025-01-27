@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "cf75a286-8986-4c26-928a-6c998f6ac711",
+		"name": "Ventas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1037508"
+	},
+	"item": [
+		{
+			"name": "Listar Ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/ventas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Ventas por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/ventas/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ventas",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generar una Venta de dos productos a un cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCliente\": 3,\r\n    \"detalles\": [\r\n        {\r\n            \"idProducto\": 1,\r\n            \"cantidad\": 1\r\n        },\r\n        {\r\n            \"idProducto\": 4,\r\n            \"cantidad\": 1\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/api/ventas",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

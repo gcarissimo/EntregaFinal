@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "2b311d2f-9de8-41ad-bd9e-9da3681c88fa",
+		"name": "ApiExterna",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1037508"
+	},
+	"item": [
+		{
+			"name": "Obtener Fecha api externa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/fecha",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"fecha"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Cotización del Dolar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/dolar?casa=blue&fecha=2025-01-01",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"dolar"
+					],
+					"query": [
+						{
+							"key": "casa",
+							"value": "blue"
+						},
+						{
+							"key": "fecha",
+							"value": "2025-01-01"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
